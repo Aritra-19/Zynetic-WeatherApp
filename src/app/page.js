@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Loader2, Droplets, Wind, Calendar, CloudSun, CloudRain, Cloud, Sun, Snowflake } from 'lucide-react';
 
