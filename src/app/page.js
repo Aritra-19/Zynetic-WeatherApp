@@ -40,7 +40,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    fetchWeather('India');
+    fetchWeather('Kolkata');
   }, []);
 
   const getWeatherIcon = (weatherId) => {
