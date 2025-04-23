@@ -11,7 +11,7 @@ const Home = () => {
   const [error, setError] = useState(null);
   const [temperatureUnit, setTemperatureUnit] = useState('celsius');
 
-  const NEXT_PUBLIC_WEATHER_KEY = process.env.NEXT_PUBLIC_WEATHER_KEY;
+  const WEATHER_KEY = process.env.NEXT_PUBLIC_WEATHER_KEY;
 
   const fetchWeather = async (city) => {
     setLoading(true);
@@ -19,7 +19,7 @@ const Home = () => {
 
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${NEXT_PUBLIC_WEATHER_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_KEY}&units=metric`
       );
 
       if (!response.ok) {
